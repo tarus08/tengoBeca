@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/adicionales/adicionales.iml" filepath="$PROJECT_DIR$/adicionales/adicionales.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agenda/agenda.iml" filepath="$PROJECT_DIR$/agenda/agenda.iml" />
+      <module fileurl="file://$PROJECT_DIR$/alumnos/alumnos.iml" filepath="$PROJECT_DIR$/alumnos/alumnos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cipher/cipher.iml" filepath="$PROJECT_DIR$/cipher/cipher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/contar/contar.iml" filepath="$PROJECT_DIR$/contar/contar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/copiaBinarios/copiaBinarios.iml" filepath="$PROJECT_DIR$/copiaBinarios/copiaBinarios.iml" />
+      <module fileurl="file://$PROJECT_DIR$/deportistas/deportistas.iml" filepath="$PROJECT_DIR$/deportistas/deportistas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/duplicaContenido/duplicaContenido.iml" filepath="$PROJECT_DIR$/duplicaContenido/duplicaContenido.iml" />
+      <module fileurl="file://$PROJECT_DIR$/files/files.iml" filepath="$PROJECT_DIR$/files/files.iml" />
+      <module fileurl="file://$PROJECT_DIR$/formulasProbabilidad/formulasProbabilidad.iml" filepath="$PROJECT_DIR$/formulasProbabilidad/formulasProbabilidad.iml" />
+      <module fileurl="file://$PROJECT_DIR$/meteBinarios/meteBinarios.iml" filepath="$PROJECT_DIR$/meteBinarios/meteBinarios.iml" />
+      <module fileurl="file://$PROJECT_DIR$/operaciones/operaciones.iml" filepath="$PROJECT_DIR$/operaciones/operaciones.iml" />
+      <module fileurl="file://$PROJECT_DIR$/socios/socios.iml" filepath="$PROJECT_DIR$/socios/socios.iml" />
+      <module fileurl="file://$PROJECT_DIR$/temperatura/temperatura.iml" filepath="$PROJECT_DIR$/temperatura/temperatura.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tengoBeca.iml" filepath="$PROJECT_DIR$/tengoBeca.iml" />
+      <module fileurl="file://$PROJECT_DIR$/volumen/volumen.iml" filepath="$PROJECT_DIR$/volumen/volumen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/writeInfile/writeInfile.iml" filepath="$PROJECT_DIR$/writeInfile/writeInfile.iml" />
+    </modules>
+  </component>
+</project>

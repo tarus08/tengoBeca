@@ -1,0 +1,2 @@
+This is the name of the contact: mario whose phone number is: 123456789
+This is the name of the contact: maria whose phone number is: 987654321
