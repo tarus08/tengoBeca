@@ -6,7 +6,7 @@ public class Module {
     private String name;
     private int hours;
     private Teacher teacher;
-    private List<Student> students = new ArrayList<Student>();
+    private List<Student> studentsList = new ArrayList<Student>();
     private List<Question> questions;
     private Map<String, String> correctAnswers;
     private Exam exam;
@@ -15,7 +15,7 @@ public class Module {
         this.name = name;
         this.hours = hours;
         this.teacher = teacher;
-        this.students = students;
+        this.studentsList = students;
         this.questions = new ArrayList<>();
         this.correctAnswers = new HashMap<>();
         this.exam = new Exam(name, questions, correctAnswers);
@@ -68,10 +68,18 @@ public class Module {
     }
     public List<Student> getStudent()
     {
-        return students;
+        return studentsList;
     }
     public void setStudent(List<Student> students)
     {
-        this.students = students;
+        this.studentsList = students;
+    }
+
+    public List<Student> getStudents() {
+        return studentsList;
+    }
+
+    public Exam getExam() {
+        return exam;
     }
 }

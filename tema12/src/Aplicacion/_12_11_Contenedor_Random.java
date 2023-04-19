@@ -20,5 +20,7 @@ public class _12_11_Contenedor_Random {
         Collections.sort(listOfNumbers);
         System.out.println("This is the collection ordered (lower to higher) : " +listOfNumbers);
 
+        int num = 9;
+
     }
 }

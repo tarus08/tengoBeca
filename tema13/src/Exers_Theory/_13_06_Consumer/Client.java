@@ -1,23 +1,15 @@
-package Exercises_Theory._11_08_Socios;
+package Exers_Theory._13_06_Consumer;
 
-import java.io.Serializable;
+public class Client {
 
-public class Socios implements Serializable {
     private String name;
     private int age;
 
-    public Socios(String name, int age) {
+    public Client(String name, int age) {
         this.name = name;
         this.age = age;
     }
 
-    @Override
-    public String toString() {
-        return "Socios{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                '}';
-    }
     public String getName() {
         return name;
     }
@@ -25,9 +17,11 @@ public class Socios implements Serializable {
     public void setName(String name) {
         this.name = name;
     }
+
     public int getAge() {
         return age;
     }
+
     public void setAge(int age) {
         this.age = age;
     }

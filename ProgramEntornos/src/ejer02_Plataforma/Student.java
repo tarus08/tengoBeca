@@ -8,11 +8,12 @@ private String aka, email;
         this.email = email;
     }
 
-    public void getGrades(String name, Exam exam)
+    public String toString()
     {
-
+        return "STUDENTS. Name: " +getName()+ ", the surname: " +getSurname()+ ", the aka: " +getAka()+
+                ", the address: " +getAddress()+ ", the phone number: " +getPhoneNumber()+
+                ", the email: " +getEmail();
     }
-
     public String getAka() {
         return aka;
     }

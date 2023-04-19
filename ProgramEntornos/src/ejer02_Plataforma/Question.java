@@ -7,7 +7,7 @@ import java.util.List;
 public class Question {
     private String question;
     private String correctAnswer;
-    private String inCorrectAnswer;
+    private List<String> inCorrectAnswers;
     private List<String> answers = new ArrayList<String>();
 
     public Question(String question, String correctAnswer, String... incorrectAnswers) {
@@ -15,6 +15,7 @@ public class Question {
         this.correctAnswer = correctAnswer;
         this.answers.add(correctAnswer);
         this.answers.addAll(Arrays.asList(incorrectAnswers));
+        this.inCorrectAnswers = Arrays.asList(incorrectAnswers);
     }
 
     public String getQuestion() {
@@ -45,4 +46,7 @@ public class Question {
         return answers.get(answerIndex);
     }
 
+    public List<String> getIncorrectAnswers() {
+        return inCorrectAnswers;
+    }
 }

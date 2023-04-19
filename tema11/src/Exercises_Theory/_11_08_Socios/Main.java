@@ -1,4 +1,4 @@
-//hacer que copie el contenido a otro archivo .dat
+package Exercises_Theory._11_08_Socios;//hacer que copie el contenido a otro archivo .dat
 
 import java.io.*;
 import java.util.Arrays;

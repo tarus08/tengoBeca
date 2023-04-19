@@ -9,12 +9,11 @@ public class Cycle {
 
     static Scanner scanner = new Scanner(System.in);
     private String name;
-    private Map<String, List<Module>> cycleMap;
-    private List<Module> moduleList;
+    private List<ProfessionalSkills> professionalSkillsList;
 
-    public Cycle(String name, List<Module> moduleList) {
+    public Cycle(String name, List<ProfessionalSkills> professionalSkillsList) {
         this.name = name;
-        this.moduleList = moduleList;
+        this.professionalSkillsList = professionalSkillsList;
     }
 
     public String getName() {
@@ -23,5 +22,9 @@ public class Cycle {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public List<ProfessionalSkills> getProfessionalSkills() {
+        return professionalSkillsList;
     }
 }

@@ -61,7 +61,7 @@ public class Main {
                     break;
 
                 case 2:
-                    if (_list_Emple != null && !_list_Emple.isEmpty()) {
+                    if (!_list_Emple.isEmpty()) {
                         System.out.println("Enter the index of the employee you want to delete");
                         int index = scanner.nextInt();
                         if (index >= 0 && index < _list_Emple.size()) {
