@@ -20,7 +20,7 @@ public class Module {
         this.correctAnswers = new HashMap<>();
         this.exam = new Exam(name, questions, correctAnswers);
     }
-    public void passExam(int questionIndex, int answerIndex)
+    protected void passExam(int questionIndex, int answerIndex)
     {
         int grades = 0;
         String enteredAnswer = questions.get(questionIndex).getAnswer(answerIndex);
@@ -40,6 +40,15 @@ public class Module {
         {
             System.out.println("You haven't passed the exam, sorry.");
         }
+    }
+    public void matricula(Student student)
+    {
+
+    }
+
+    public void hoursTotal(int hours)
+    {
+
     }
 
     public String getName() {

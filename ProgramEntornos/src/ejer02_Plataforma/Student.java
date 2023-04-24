@@ -1,11 +1,23 @@
 package ejer02_Plataforma;
 
 public class Student extends Person{
+    private float avGrade;
 private String aka, email;
-    public Student(String name, String surname, String address, int phoneNumber, String aka, String email) {
+    public Student(String name, String surname, String address, int phoneNumber, String aka, String email, float avGrade) {
         super(name, surname, address, phoneNumber);
         this.aka = aka;
         this.email = email;
+        this.avGrade = avGrade;
+    }
+
+    protected void calculateAvgGrade()
+    {
+
+    }
+
+    protected static void showCertificate()
+    {
+        System.out.println("Congratulations! You have successfully passed the cycle. ");
     }
 
     public String toString()
@@ -14,19 +26,27 @@ private String aka, email;
                 ", the address: " +getAddress()+ ", the phone number: " +getPhoneNumber()+
                 ", the email: " +getEmail();
     }
-    public String getAka() {
+
+    protected String getAka() {
         return aka;
     }
 
-    public void setAka(String aka) {
+    protected void setAka(String aka) {
         this.aka = aka;
     }
 
-    public String getEmail() {
+    protected String getEmail() {
         return email;
     }
 
-    public void setEmail(String email) {
+    protected void setEmail(String email) {
         this.email = email;
+    }
+
+    protected float getAvGrade() {
+        return avGrade;
+    }
+    protected void setAvGrade(float avGrade) {
+        this.avGrade = avGrade;
     }
 }

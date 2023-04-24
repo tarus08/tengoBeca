@@ -11,10 +11,6 @@ public class Project {
         this.nameStudent = nameStudent;
         this.lookFor = lookFor;
     }
-
-
-    /////////hacer que se puedan insertar preguntas, has hecho el trabajo? true si sí
-    // ..a poder ser en la clase de question...
     public void makeProject(String nameStudent)
     {
         System.out.println("Did you make the ");

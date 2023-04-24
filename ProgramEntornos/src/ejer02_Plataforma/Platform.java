@@ -167,7 +167,7 @@ public class Platform {
         System.out.println("Your final score is: " + score + " out of " + questions.size());
 
         if (score >= questions.size()/2) {
-            showCertificate();
+            Student.showCertificate();
         }
     }
 
@@ -211,10 +211,5 @@ public class Platform {
                 System.out.println("----------------------------");
             }
         }
-    }
-
-    public void showCertificate()
-    {
-        System.out.println("Congratulations! You have successfully passed the cycle. ");
     }
 }
