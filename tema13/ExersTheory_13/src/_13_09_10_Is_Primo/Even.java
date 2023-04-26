@@ -1,6 +1,6 @@
 package _13_09_10_Is_Primo;
 
-public class Primo {
+public class Even {
 
     static boolean isEven (Integer n)
     {

@@ -2,7 +2,7 @@ package _13_09_10_Is_Primo;
 
 import java.util.ArrayList;
 import java.util.List;
-import static _13_09_10_Is_Primo.Primo.isEven;
+import static _13_09_10_Is_Primo.Even.isEven;
 
 public class Main02 {
     public static void main(String[] args) {
@@ -13,13 +13,13 @@ public class Main02 {
         }
 
         List<Integer> sortedEvenNumbers = list.stream()
-                .filter(Primo::isEven)
+                .filter(Even::isEven)
                 .sorted()
                 .toList();
         System.out.println(sortedEvenNumbers);
 
         List<Integer> reversedEvenNumbers = list.stream()
-                .filter(Primo::isEven)
+                .filter(Even::isEven)
                 .sorted((a, b) -> b -a)
                 .toList();
         System.out.println(reversedEvenNumbers);

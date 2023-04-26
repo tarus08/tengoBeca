@@ -1,9 +1,7 @@
 package _13_09_10_Is_Primo;
 
 import java.util.Arrays;
-import java.util.List;
 import java.util.stream.Stream;
-import static _13_09_10_Is_Primo.Primo.isEven;
 
 public class Main03 {
     public static void main(String[] args) {
@@ -14,12 +12,12 @@ public class Main03 {
         }
 
         Stream<Integer> nums02 = Arrays.stream(nums)
-                .filter(Primo::isEven)
+                .filter(Even::isEven)
                 .sorted();
         System.out.println("These are the numbers in natural order: " +Arrays.toString(nums02.toArray()));
 
         Stream<Integer> nums03 = Arrays.stream(nums)
-                .filter(Primo::isEven)
+                .filter(Even::isEven)
                 .sorted((a,b) -> b -a);
         System.out.println("These are the numbers in reversed order: " +Arrays.toString(nums03.toArray()));
 
@@ -42,7 +40,7 @@ public class Main03 {
             }
         }
         Stream<Integer> stream = Arrays.stream(nums04)
-                .filter(Primo::isEven)
+                .filter(Even::isEven)
                 .sorted((a,b) -> b -a);
         System.out.print("These are the numbers higher than 200 and lower than 800 in reversed order: ");
         stream.forEach(num -> System.out.print(num + " "));

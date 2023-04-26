@@ -1,6 +1,5 @@
-package _12_37_Furbol;
+package _13_29_Furbo_12_37;
 
-import javax.annotation.processing.SupportedSourceVersion;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -8,13 +7,13 @@ import java.util.Scanner;
 public class Jugador {
     static Scanner scanner = new Scanner (System.in);
     // Define a map to store the players on the team
-    private static Map<Integer, Jugador> plantilla = new HashMap<Integer, Jugador>();
+    private static final Map<Integer, Jugador> plantilla = new HashMap<Integer, Jugador>();
     private String name = " ";
     private static Position position;
     private int dni = 0;
     private double height = 0.0;
 
-    public Jugador(String name, int dni, double height, Position position) {
+    protected Jugador(String name, int dni, double height, Position position) {
         this.name = name;
         this.dni = dni;
         this.height = height;
@@ -39,6 +38,7 @@ public class Jugador {
     {
         if (plantilla.containsKey(jerseyNumber))
         {
+            System.out.println("The player with the jersey number " + jerseyNumber + " has been deleted");
             return plantilla.remove(jerseyNumber);
         }
         else
@@ -67,7 +67,7 @@ public class Jugador {
             Integer jerseyNumber = entry.getKey();
             Jugador jugador = entry.getValue();
             Position posicion = entry.getValue().getPosition();
-            if (posicion == positionEnum)
+            if (posicion.equals(positionEnum))
             {
                 System.out.println("Jersey number: " + jerseyNumber + " name: " + jugador.getName());
             }
@@ -78,7 +78,7 @@ public class Jugador {
         }
     }
 
-    public static boolean editPlayer(Map<Integer, Jugador> plantilla, Integer jerseyNumber)
+    public static void editPlayer(Map<Integer, Jugador> plantilla, Integer jerseyNumber)
     {
         if (plantilla.containsKey(jerseyNumber))
         {
@@ -91,14 +91,13 @@ public class Jugador {
             juga.setName(nameMod);
             juga.setHeight(heightMod);
 
-            return true;
         }
         else
         {
-            return false;
+            System.out.println("The player does not exist");
         }
     }
-        public enum Position
+    public enum Position
     {
         PORTERO, DEFENSA, CENTROCAMPISTA, DELANTERO;
     }

@@ -1,9 +1,10 @@
-package _13_16_Socio;
+package _13_16_17_18_19_20_21_Socio;
 
 import java.time.LocalDate;
 
 public class Socio {
-    private String dni, name;
+    private String dni;
+    private String name;
     private LocalDate birthDate, fechaAlta;
     private double share;
     private int numFamily;
@@ -17,25 +18,35 @@ public class Socio {
         this.numFamily = numFamily;
     }
 
-    public String equals()
+    public int compareTo(Socio s)
     {
-        boolean startswith = false;
-        if (name.startsWith("A"))
-        {
-            return dni;
-        }
-        return dni;
+        return this.getDni().compareTo(s.getDni());
     }
 
-     void compareTo()
+    public int equals(Socio s)
     {
-
+        return this.getDni().compareTo(s.getDni());
     }
 
+    public static int age(Socio s1, Socio s2)
+    {
+        return s2.getBirthDate().until(LocalDate.now()).getYears()
+                - s1.getBirthDate().until(LocalDate.now()).getYears();
+    }
+
+    public static int loyalty(Socio s1, Socio s2)
+    {
+        return s2.getFechaAlta().until(s1.getFechaAlta()).getMonths();
+    }
+
+    public static int compNames (Socio s1, Socio s2)
+    {
+        return s1.getName().compareTo(s2.getName());
+    }
     @Override
     public String toString()
     {
-        return name;
+        return "Dni: " +dni+ ". Name: " + name;
     }
 
     public String getDni() {
@@ -85,4 +96,5 @@ public class Socio {
     public void setNumFamily(int numFamily) {
         this.numFamily = numFamily;
     }
+
 }
