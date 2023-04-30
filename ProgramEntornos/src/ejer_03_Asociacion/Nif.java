@@ -4,7 +4,7 @@ public class Nif {
 
     private int dni;
     private char letter;
-    public Nif(int dni, char letter) {
+    protected Nif(int dni, char letter) {
         this.dni = dni;
         this.letter = letter;
     }

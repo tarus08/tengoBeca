@@ -2,15 +2,13 @@ package ejer_03_Asociacion;
 
 public class Person {
     private Nif nif;
-    private String name;
-    private Date date;
-    private String numAssociate;
+    private Name name;
+    private Date birthDate;
 
-    public Person(Nif nif, String name, Date date, String numAssociate) {
+    protected Person(Nif nif, Name name, Date birthDate) {
         this.nif = nif;
         this.name = name;
-        this.date = date;
-        this.numAssociate = numAssociate;
+        this.birthDate = birthDate;
     }
 
     public Nif getNif() {
@@ -21,27 +19,20 @@ public class Person {
         this.nif = nif;
     }
 
-    public String getName() {
+    public Name getName() {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName(Name name) {
         this.name = name;
     }
 
-    public Date getDate() {
-        return date;
+    public Date getBirthDate() {
+        return birthDate;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
+    public void setBirthDate(Date birthDate) {
+        this.birthDate = birthDate;
     }
 
-    public String getNumAssociate() {
-        return numAssociate;
-    }
-
-    public void setNumAssociate(String numAssociate) {
-        this.numAssociate = numAssociate;
-    }
 }
